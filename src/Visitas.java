@@ -2,7 +2,7 @@ public class Visitas {
     public static void main(String[] args) {
 
         int[] visitasDiarias = convertirAEnteros(args);
-        double promedio = calcularPromedio(visitasDiarias);
+        double promedio = promedio(visitasDiarias);
         System.out.println("El promedio de visitas diarias es: " + promedio);
     }
 
@@ -14,7 +14,7 @@ public class Visitas {
         return visitasDiarias;
     }
 
-    public static double calcularPromedio(int[] visitasDiarias) {
+    public static double promedio(int[] visitasDiarias) {
         int suma = 0;
         for (int visitas : visitasDiarias) {
             suma += visitas;
